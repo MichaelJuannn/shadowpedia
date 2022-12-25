@@ -13,7 +13,7 @@ export default function Agents(props: any) {
 
     return (
         <>
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 {props.data.map((agentData: any) => <Agentcard data={agentData} />)}
             </div>
         </>
