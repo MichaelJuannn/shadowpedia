@@ -20,6 +20,8 @@ interface Agent {
 
 
 export default function Agentcard(props: Agent) {
+    if (props.data.displayName == "KAY/O")
+        props.data.displayName = "kayo"
     return (
         <>
             <div className="card w-96 bg-base-100 shadow-xl">

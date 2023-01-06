@@ -11,7 +11,7 @@ const agentDict: agentById = {
     chamber: "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
     kayo: "601dbbe7-43ce-be57-2a40-4abd24953621",
     skye: "6f2a04ca-43e0-be17-7f36-b3908627744d",
-    cyper: "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+    cypher: "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
     sova: "ded3520f-4264-bfed-162d-b080e2abccf9",
     killjoy: "1e58de9c-4950-5125-93e9-a0aee9f98746",
     harbor: "95b78ed7-4637-86d9-7e41-71ba8c293152",
