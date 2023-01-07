@@ -1,5 +1,5 @@
-import Image from "next/image"
 
+import Link from "next/link"
 interface Abilities {
     displayName: string,
     displayIcon: string
@@ -20,10 +20,12 @@ interface Agent {
 
 
 export default function Agentcard(props: Agent) {
+    if (props.data.displayName == "KAY/O")
+        props.data.displayName = "kayo"
     return (
         <>
             <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src={props.data.displayIcon} alt={props.data.displayName} width={256} /></figure>
+                <figure><Link href={`/valorant/${props.data.displayName.toLowerCase()}`}><img src={props.data.displayIcon} alt={props.data.displayName} width={256} /></Link></figure>
                 <div className="card-body">
                     <h2 className="card-title">{props.data.displayName}</h2>
                     <p>{props.data.description}</p>
