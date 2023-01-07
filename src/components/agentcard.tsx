@@ -1,5 +1,6 @@
 
 import Link from "next/link"
+import { useEffect, useState } from "react"
 interface Abilities {
     displayName: string,
     displayIcon: string
@@ -21,7 +22,8 @@ interface Agent {
 
 export default function Agentcard(props: Agent) {
     if (props.data.displayName == "KAY/O")
-        props.data.displayName = "kayo"
+        props.data.displayName = "Kayo"
+
     return (
         <>
             <div className="card w-96 bg-base-100 shadow-xl">
