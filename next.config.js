@@ -1,14 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'media.valorant-api.com',
-      },
-    ],
-  },
-}
+	experimental: {
+		runtime: "experimental-edge",
+	},
+	reactStrictMode: true,
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "media.valorant-api.com",
+			},
+		],
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
